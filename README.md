@@ -1,1 +1,2 @@
 # SPEC-Lab
+This repository contains some of the scripts I contributed to the Security and Political Economy (SPEC) Lab at University of Southern California in 2021. I assisted in building statistical measures of international economic interdependence for a research project involving complex international economic interdependence. Additionally, I helped with data management for the publicly available International Political Economy Data Resource. For further information about the lab, please visit the SPEC Lab website: https://www.uscspec.org/.
