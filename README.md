@@ -3,4 +3,4 @@ This repository contains some of the scripts I contributed to the Security and P
 
 Some notes about the included files:
 1. File paths have been ommitted from the script for reasons of privacy and security.
-2. You may notice the use of an appendids() function in some of these scripts. This is a SPEC Lab-specific function used to append commonly used international relations country identifier codes to the data set. It's release as a publicly available package is in the works.
+2. You may notice the use of an appendids() function in some of these scripts. This is a SPEC Lab-specific function used to append commonly used international relations country identifier codes to the data set. Its release as a publicly available package is in the works.
