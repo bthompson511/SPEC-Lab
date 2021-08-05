@@ -15,6 +15,9 @@
 # pos_in_liabilities: Inward FDI Position - Liabilities
 # pos_out_liabilities; Outward FDI Position - Liabilities
 # Last Updated: BT 07/12/21
+# Special thanks to Miriam Barnum (SPEC Lab - USC) whose scripts and 
+# training heavily informed my use of a prep function to prep 
+# more than one data set at once.
 # *************************/
 library(tidyr)
 library(dplyr)
@@ -94,11 +97,11 @@ label(fdi_oecd$pos_out_liabilities) <- "Outward FDI Position - Liabilities (USD 
 fdi_oecd <- fdi_oecd[!duplicated(fdi_oecd),]
 
 # Read in the dyad append ids file
-source(paste(ids_path,"dyad_append_ids.R",sep=""))
+source(paste(ids_path,"append_ids.R",sep=""))
 
 # Append IDs
-fdi_oecd <-  dyad_append_ids(fdi_oecd, breaks = F)
-fdi_oecd <-  dyad_append_suffix(fdi_oecd,"FDI_OECD")
+fdi_oecd <-  append_ids(fdi_oecd, dyad = T, breaks = F)
+fdi_oecd <-  append_suffix(fdi_oecd, "FDI_OECD", dyad = T)
 
 # Check to see if they appended
 names(fdi_oecd)
